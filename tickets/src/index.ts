@@ -6,6 +6,7 @@ import { OrderCancelledListener } from './events/listeners/order-cancelled-liste
 
 
 const start = async () => {
+  console.log("Starting tickets service...")
   if (!process.env.JWT_KEY){
     throw new Error("No JWT secret enviroment variable defined")
   }
